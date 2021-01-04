@@ -14,12 +14,12 @@ public class DrawLine : MonoBehaviour
     }
 
 
-    public void UpdateLine(Guardian guardian)
+    public void UpdateLine(List<Vector3> points)
     {
-        Vector3[] newPositions = new Vector3[guardian.points.Count];
+        Vector3[] newPositions = new Vector3[points.Count];
 
-        for (int i = 0; i < guardian.points.Count; i++) {
-            newPositions[i] = new Vector3(guardian.points[i].x, 0, guardian.points[i].y);
+        for (int i = 0; i < points.Count; i++) {
+            newPositions[i] = points[i];
         }
 
         lineRenderer.positionCount = newPositions.Length;

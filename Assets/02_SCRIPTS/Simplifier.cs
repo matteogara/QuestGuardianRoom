@@ -18,7 +18,7 @@ public class Simplifier : MonoBehaviour
         int index = guardian.points.IndexOf(midPoint);
 
         List<Vector2> firstHalf = guardian.points.GetRange(0, index);
-        List<Vector2> secondHalf = guardian.points.GetRange(index, guardian.points.Count - index); // forse - 1
+        List<Vector2> secondHalf = guardian.points.GetRange(index, guardian.points.Count - index);
 
         firstHalf.Add(secondHalf[0]);
         secondHalf.Add(firstHalf[0]);

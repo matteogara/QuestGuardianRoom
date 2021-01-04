@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SaveLoad : MonoBehaviour
 {
-    public bool rescale = false;
+    public bool resize = true;
     public int oldResolution = 700;
     public int newResolution = 7;
 
@@ -37,7 +37,7 @@ public class SaveLoad : MonoBehaviour
         string jsonToPoints = System.IO.File.ReadAllText(path);
         guardian = JsonUtility.FromJson<Guardian>(jsonToPoints);
 
-        if (rescale) {
+        if (resize) {
             for (int i = 0; i < guardian.points.Count; i++) {
                 float x = (guardian.points[i].x / oldResolution - 0.5f) * newResolution;
                 float y = (guardian.points[i].y / oldResolution - 0.5f) * newResolution;
