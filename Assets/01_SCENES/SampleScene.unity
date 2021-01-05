@@ -291,8 +291,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3966a8e976a9f4433ac92b1058d87d53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallPiece: {fileID: 1275548338931711938, guid: 84f28a067193d43eeac41880067f5782,
+  wall: {fileID: 919132149155446097, guid: 99483947e5ce4454dbe36a72777c3076, type: 3}
+  wallWithDoor: {fileID: 919132149155446097, guid: f6a31c2807f874e669a77d617a4731d8,
     type: 3}
+  wallWithWindow: {fileID: 919132149155446097, guid: 23fbbd66452874561aced02788c550d3,
+    type: 3}
+  doorChance: 1
+  windowChance: 2
+  wallChance: 1
 --- !u!4 &345156761
 Transform:
   m_ObjectHideFlags: 0
